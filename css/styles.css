@@ -1,0 +1,68 @@
+html {
+	font-size: 62.5%;
+}
+
+/* developer styles go here */
+body {
+	font-family: arial, helvetica, sans-serif;
+	font-size: 1.6rem;
+	background-color: #192f5e;
+}
+
+header {
+	background-color: #fff;
+	padding: 2%;
+}
+
+header nav {
+	width: 480px;
+	margin: 0 auto;
+}
+
+header a {
+	color: #3f3f3f;
+	text-decoration: none;
+	display: block;
+}
+
+.menu a:hover,
+.menu a:active {
+	background-color: gainsboro;
+	border-radius: 4px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu li {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: auto;
+	text-align: center;
+	line-height: 4rem;
+	position: relative;
+}
+
+.menu li ul {
+	visibility: hidden;
+	opacity: 0;
+	display: none;
+	position: absolute;
+	background-color: #fff;
+	border-radius: 4px;
+	top: 4rem;
+	left: 0;
+}
+
+.menu li:hover > ul,
+.menu li > ul:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+}
+
+.menu li li {
+	width: 10.7rem;
+}
